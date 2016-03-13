@@ -28,6 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        <base href="./">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -54,6 +55,8 @@
         <script src="js/angulardeps/2.0.0-beta.9/system.js"></script>
         <script src="js/angulardeps/2.0.0-beta.9/Rx.js"></script>
         <script src="js/angulardeps/2.0.0-beta.9/angular2.dev.js"></script>
+        <script src="js/angulardeps/2.0.0-beta.9/router.js"></script>
+        <script src="js/angulardeps/2.0.0-beta.9/http.js"></script>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './sub.component', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,38 +10,28 @@ System.register(['angular2/core', './sub.component', 'angular2/router'], functio
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, sub_component_1, router_1;
-    var AppComponent;
+    var core_1;
+    var SubRoute;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (sub_component_1_1) {
-                sub_component_1 = sub_component_1_1;
-            },
-            function (router_1_1) {
-                router_1 = router_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            SubRoute = (function () {
+                function SubRoute() {
                 }
-                AppComponent = __decorate([
+                SubRoute = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        directives: [router_1.ROUTER_DIRECTIVES],
-                        template: "\n  <div>Device Is Ready, Angular2 is working</div>\n  <router-outlet></router-outlet>\n  "
-                    }),
-                    router_1.RouteConfig([
-                        { path: '/', name: 'Sub', component: sub_component_1.SubRoute, useAsDefault: true }
-                    ]), 
+                        selector: 'sub-route',
+                        template: 'This is a sub route'
+                    }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], SubRoute);
+                return SubRoute;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("SubRoute", SubRoute);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=sub.component.js.map
